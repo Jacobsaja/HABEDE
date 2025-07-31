@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    place-content: center;
+    place-items: center;
+    background-color: #FFD6E8;
+}
+.main{
+    width: 500px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+.awal{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+}
+img{
+
+    height: 200px;
+    width: 300px;
+}
+.gambar{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    top: 10px;
+}
+#pencet{
+    width: 125px;
+    height: auto;
+    border: none;
+    background-color: #FFD6E8;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 25px;
+}
+#vidio{
+    position: absolute;
+    z-index: calc(99);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#g2{
+    display: none;
+}
+.tulisan{
+    width: 10000px;
+    display: flex;
+    position: fixed;
+    top: 5%;
+    font-family: 'Great Vibes', cursive;
+    font-size: large;
+    overflow-x: hidden;
+}
+.tulis{
+    animation: scroll 120s linear infinite;
+}
+.tulisan::-webkit-scrollbar{
+    width: 0;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-300px*50));
+    }
+}
